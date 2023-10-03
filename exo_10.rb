@@ -1,8 +1,10 @@
 annee_act = Time.now.year
 print "quelle est ton année de naissance ? : "
 annee_user = gets.chomp.to_i
-diff = annee_act - annee_user
+age = annee_act - annee_user +1
 
-diff.times do |i|
-  puts "vous avais eu #{diff-i} ans en #{annee_act-i}"
+age.times do |i|
+  puts "en #{annee_act-i} vous avais eu #{age-i-1} ans "
   end
+
+#   a modifié / OK

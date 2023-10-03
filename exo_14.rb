@@ -7,12 +7,21 @@ nb_email.times do |i|
   email = "lala0#{i+1}@email.com"
   email_array << email
 end
-email_array.each_with_index do |email, index| # a comprendre 
-  if (index + 1).even?
-    email_pairs << email
+email_array.each_with_index do |email, index| # a comprendre email_array=array, .each_with_index = chaque itération de mon array; do |email, index| pour chaque email avec son index
+  if (index + 1).even? # .even = pair en francais odd impaire
+    email_pairs << email # ou .push
   end
+#email_pairs = email_array.select.with_index { |_, index| (index + 1).even? }  
 end
 puts email_array
-puts "les email paire"#email_pairs = email_array.select.with_index { |_, index| (index + 1).even? }
+puts "les email paire" 
 puts email_pairs
+# possible amélioration du code
 
+#methode louis
+# email_array.each do |email|
+#   numero_email = email[-11].to_i
+#   if numero_email.even?
+#     puts email
+#   end
+# end
