@@ -1,4 +1,4 @@
-print "nobre de fois : "
+print "nombre de fois : "
 taille = gets.chomp
 taille = taille.to_i
 

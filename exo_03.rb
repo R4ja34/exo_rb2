@@ -1,7 +1,7 @@
 print "quelle est votre année de naissance : "
 year_user = gets.chomp.to_i
 
-print "vous voulais calculer pour quelle année : "
+print "vous voulez calculer pour quelle année : "
 annee = gets.chomp.to_i
 
 if annee < year_user
