@@ -4,7 +4,8 @@ print "le nombre d'email a créé : "
 nb_email = gets.chomp.to_i
 
 nb_email.times do |i|
-  email = "lala0#{i+1}@email.com"
+  num = format('%02i',i+1)
+  email = "lala#{num}@email.com"
   email_array << email
 end
 email_array.each_with_index do |email, index| # a comprendre email_array=array, .each_with_index = chaque itération de mon array; do |email, index| pour chaque email avec son index
