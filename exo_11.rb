@@ -10,4 +10,3 @@ age.times do |i|
     puts "Il y a #{age-i} ans, en #{annee_user-i}, tu avais #{i} ans"
   end
 end
-# a corriger / OK

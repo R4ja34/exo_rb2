@@ -12,7 +12,7 @@ email_array.each_with_index do |email, index| # a comprendre email_array=array, 
   if (index + 1).even? # .even = pair en francais odd impaire
     email_pairs << email # ou .push
   end
-#email_pairs = email_array.select.with_index { |_, index| (index + 1).even? }  
+email_pairs = email_array.select.with_index { |_, index| (index + 1).even? }  
 end
 puts email_array
 puts "les email paire" 
